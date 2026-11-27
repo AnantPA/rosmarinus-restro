@@ -93,6 +93,62 @@ export const features = [
   "Take-away",
 ];
 
+// Cards for the "What we offer" grid.
+export const offers = [
+  {
+    title: "Pure vegetarian dining",
+    text: "Five cuisines from one vegetarian kitchen, with Jain versions on request.",
+    image: "/images/tikka.jpg",
+    width: 1200,
+    height: 1043,
+    alt: "Chargrilled green paneer tikka on a white plate",
+    position: "40% 45%",
+  },
+  {
+    title: "Live music evenings",
+    text: "Live music in the lounge, signature mocktails and big matches on the screen.",
+    image: "/images/mocktail.jpg",
+    width: 830,
+    height: 940,
+    alt: "A layered blue and green signature mocktail against evening lights",
+    position: "50% 40%",
+  },
+  {
+    title: "Celebrations and banquets",
+    text: "Birthdays, anniversaries and office dinners with a set banquet menu.",
+    image: "/images/table.jpg",
+    width: 710,
+    height: 850,
+    alt: "A long table set for a group beside the garden windows",
+    position: "50% 70%",
+  },
+  {
+    title: "Family lunches and dinners",
+    text: "Air-conditioned dining, valet parking and a warm welcome for kids.",
+    image: "/images/mezze.jpg",
+    width: 1200,
+    height: 874,
+    alt: "A shared board of falafel, pita and dips",
+    position: "40% 50%",
+  },
+];
+
+// Photos shown in the gallery carousel, in order.
+export const gallery = [
+  { src: "/images/mural.jpg", width: 1220, height: 370, alt: "The Rialto Bridge mural between Roman columns in the main dining hall", position: "50% 40%" },
+  { src: "/images/table.jpg", width: 710, height: 850, alt: "A table set for eight beside tall garden windows at dusk", position: "50% 70%" },
+  { src: "/images/penne.jpg", width: 464, height: 320, alt: "Penne in tomato sauce with fresh basil", position: "50% 50%" },
+  { src: "/images/mocktail.jpg", width: 830, height: 940, alt: "A layered signature mocktail with a citrus garnish", position: "50% 40%" },
+  { src: "/images/mezze.jpg", width: 1200, height: 874, alt: "Mezze platter with falafel, pita, hummus and beetroot dip", position: "40% 50%" },
+  { src: "/images/tikka.jpg", width: 1200, height: 1043, alt: "Green paneer tikka with a smoky chilli sauce", position: "40% 45%" },
+  { src: "/images/sizzler.jpg", width: 930, height: 715, alt: "Vegetable fried rice sizzler with crisp dumplings", position: "50% 50%" },
+];
+
+// Guest reviews. Add only real reviews, copied with permission from Google or Instagram,
+// e.g. { name: "Guest name", text: "What they wrote", source: "Google" }.
+// While this list is empty, the page shows a "Read our reviews on Google" card instead.
+export const reviews: { name: string; text: string; source: string }[] = [];
+
 export function whatsappLink(message: string) {
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;
 }

@@ -26,10 +26,14 @@ Then open http://localhost:3000.
 | --- | --- |
 | Phone, WhatsApp, address, hours, Instagram, menu link, domain | `lib/site.ts` |
 | Cuisine list, signature dishes, features list | `lib/site.ts` |
+| "What we offer" cards, gallery photos, guest reviews | `lib/site.ts` (`offers`, `gallery`, `reviews`) |
 | Page sections and wording | `app/page.tsx` |
 | Colours, fonts, spacing, mobile layout | `app/globals.css` |
-| Header and mobile menu | `components/Header.tsx` |
-| WhatsApp booking form | `components/BookingForm.tsx` |
+| Header, mobile menu and active-section highlight | `components/Header.tsx` |
+| WhatsApp booking form (table or banquet enquiry) | `components/BookingForm.tsx` |
+| Photo carousel | `components/Gallery.tsx` |
+| Section label, heading and zigzag | `components/SectionTitle.tsx` |
+| Icons | `components/Icons.tsx` |
 | Photos | `public/images/` |
 | Browser tab icon | `app/icon.png` |
 
@@ -38,6 +42,7 @@ Then open http://localhost:3000.
 - Confirm opening hours with the restaurant (`lib/site.ts`, marked TODO).
 - Set the real domain in `lib/site.ts` (`site.url`), used for search and social previews.
 - Check dish names against the current menu.
+- Add a few real guest reviews (copied from Google, with the guest's name) to `reviews` in `lib/site.ts`. Until then the page shows a "Reviews on Google" card.
 - Swap in full-size original photos for the sharpest result. Keep the same file names, or update the paths in `lib/site.ts` and `app/page.tsx`.
 
 ## How booking works
